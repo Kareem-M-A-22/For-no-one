@@ -605,3 +605,28 @@ PAGE TRANSITION
     transform:translateY(30px);
     transition:.35s;
 }
+
+
+/* إيقاف الخلفية والمؤثرات مؤقتًا */
+body.maintenance-mode {
+    background: #fff !important;
+    background-image: none !important;
+    animation: none !important;
+}
+
+body.maintenance-mode::before,
+body.maintenance-mode::after {
+    display: none !important;
+    animation: none !important;
+}
+
+body.maintenance-mode #hearts,
+body.maintenance-mode .float-heart {
+    display: none !important;
+    animation: none !important;
+}
+
+body.maintenance-mode .card {
+    box-shadow: none !important;
+    animation: none !important;
+}
