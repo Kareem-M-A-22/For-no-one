@@ -1178,11 +1178,20 @@ function createFloatingHearts(){
 }
 
 
+
 pauseMusic();
 
 document.querySelectorAll("audio").forEach(audio => {
     audio.pause();
+    audio.remove();
 });
+
+document.body.classList.add("maintenance-mode");
+
+const hearts = document.getElementById("hearts");
+if (hearts) {
+    hearts.remove();
+}
 
 app.innerHTML = "";
 
