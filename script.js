@@ -1177,9 +1177,13 @@ function createFloatingHearts(){
 
 }
 
-// createFloatingHearts(); // الموقع معطل لحين ايجاد  فايده للعبط والسذاجه دي ☺️☺️😙
+// createFloatingHearts();
 
-renderPage();
+app.innerHTML = `
+    <div class="card">
+        <div class="message">الموقع معطل لحين ايجاد  فايده للعبط والسذاجه دي ☺️☺️😙</div>
+    </div>
+`;
 
 // document.addEventListener("click", startMusic, { once: true });
 // document.addEventListener("touchstart", startMusic, { once: true });
