@@ -1177,35 +1177,21 @@ function createFloatingHearts(){
 
 }
 
-// createFloatingHearts();
 
-app.innerHTML = `
-    <div class="card">
-        <div class="message">الموقع معطل لحين ايجاد  فايده للعبط والسذاجه دي ☺️☺️😙</div>
-    </div>
-`;
+pauseMusic();
 
-// document.addEventListener("click", startMusic, { once: true });
-// document.addEventListener("touchstart", startMusic, { once: true });
-
-document.addEventListener("click", startMusic, { once: true });
-document.addEventListener("touchstart", startMusic, { once: true });
-
-
-// ===============================
-// MUSIC WHEN LEAVING / RETURNING
-// ===============================
-
-document.addEventListener("visibilitychange", () => {
-
-    if (document.hidden) {
-
-        pauseMusic();
-
-    } else {
-
-        resumeMusic();
-
-    }
-
+document.querySelectorAll("audio").forEach(audio => {
+    audio.pause();
 });
+
+app.innerHTML = "";
+
+const notice = document.createElement("div");
+notice.className = "card";
+
+const message = document.createElement("div");
+message.className = "message";
+message.textContent = "الموقع معطل لحين إيجاد فايدة للعبط والسذاجة دي ☺️☺️😙";
+
+notice.appendChild(message);
+app.appendChild(notice);
