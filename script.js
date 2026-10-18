@@ -1177,9 +1177,12 @@ function createFloatingHearts(){
 
 }
 
-createFloatingHearts();
+// createFloatingHearts(); // الموقع معطل لحين ايجاد  فايده للعبط والسذاجه دي ☺️☺️😙
 
 renderPage();
+
+// document.addEventListener("click", startMusic, { once: true });
+// document.addEventListener("touchstart", startMusic, { once: true });
 
 document.addEventListener("click", startMusic, { once: true });
 document.addEventListener("touchstart", startMusic, { once: true });
