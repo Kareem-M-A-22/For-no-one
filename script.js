@@ -17,7 +17,7 @@ let bgMusic = null;
 // HELPERS
 // ===============================
 
-function clearScreen() {
+function clearScreen() 
 
 app.innerHTML = "";
 
