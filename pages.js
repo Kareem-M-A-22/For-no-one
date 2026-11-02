@@ -1,4 +1,4 @@
-const pages = {
+const pages = 
 
 password:{
 
