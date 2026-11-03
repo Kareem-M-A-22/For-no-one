@@ -628,14 +628,3 @@ body.maintenance-mode .card {
     box-shadow: none !important;
     animation: none !important;
 }
-
-body {
-    background: #000 !important;
-    background-image: none !important;
-    background-color: #000 !important;
-}
-body::before,
-body::after {
-    background-image: none !important;
-    background: #000 !important;
-}
