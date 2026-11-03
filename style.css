@@ -28,6 +28,12 @@ body{
     position:relative;
 }
 /* ==========================
+
+body {
+    background: #000 !important;
+    background-image: none !important;
+    background-color: #000 !important;
+}
    BACKGROUND
 ========================== */
 
